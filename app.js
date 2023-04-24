@@ -52,7 +52,59 @@ const html = `
   </head>
   <body>
     <section>
-      Hello from Render!
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="">
+        <img src="magnifying-glass-dollar-solid.svg" alt="Dollar Detective Logo" />
+        Dollar Detective
+      </a>
+ 
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+        <a class="navbar-item">
+          History
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+          Edit
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Add
+            </a>
+              <a class="navbar-item">
+                Change
+              </a>
+            <a class="navbar-item">
+              Delete
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>LogOut</strong>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
     </section>
   </body>
 </html>
